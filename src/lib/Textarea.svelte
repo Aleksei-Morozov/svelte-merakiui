@@ -6,9 +6,11 @@
 	const id: string = Math.random().toString(36).substring(2, 11);
 </script>
 
-<label for={id}>{label}</label>
-<textarea {id} {placeholder} {...$$restProps} />
-<p>{message}</p>
+<div>
+	<label for={id}>{label}</label>
+	<textarea {id} {placeholder} {...$$restProps} />
+	<p>{message}</p>
+</div>
 
 <style lang="postcss">
 	label {
