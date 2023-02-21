@@ -1,15 +1,38 @@
 <script lang="ts">
 	export let label: string = '';
-	export let placeholder: string = '';
 	export let message: string = '';
+	export let placeholder: string = '';
+	export let value: string = '';
 
 	const id: string = Math.random().toString(36).substring(2, 11);
 </script>
 
 <div>
-	<label for={id}>{label}</label>
-	<textarea {id} {placeholder} {...$$restProps} />
-	<p>{message}</p>
+	{#if label !== ''}
+		<label for={id}>{label}</label>
+	{/if}
+	<textarea
+		{id}
+		{placeholder}
+		{...$$restProps}
+		bind:value
+		on:blur
+		on:change
+		on:click
+		on:contextmenu
+		on:focus
+		on:input
+		on:keydown
+		on:keypress
+		on:keyup
+		on:mouseenter
+		on:mouseleave
+		on:mouseover
+		on:paste
+	/>
+	{#if message !== ''}
+		<p>{message}</p>
+	{/if}
 </div>
 
 <style lang="postcss">
