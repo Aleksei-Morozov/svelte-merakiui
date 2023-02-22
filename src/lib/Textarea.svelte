@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Label from "./Label.svelte";
+	import Label from './Label.svelte';
 
 	export let label: string = '';
 	export let message: string = '';
@@ -10,8 +10,8 @@
 </script>
 
 <div>
-	{#if label !== ''}
-		<Label {id} text={label}></Label>
+	{#if label}
+		<Label {id} text={label} />
 	{/if}
 	<textarea
 		{id}
@@ -32,7 +32,7 @@
 		on:mouseover
 		on:paste
 	/>
-	{#if message !== ''}
+	{#if message}
 		<p>{message}</p>
 	{/if}
 </div>
