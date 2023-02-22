@@ -6,13 +6,13 @@
 <main>
 	<h1>Svelte Meraki UI</h1>
 
+	<h2>Label</h2>
 	<section>
-		<h2>Label</h2>
 		<Label id="someId" text="This is label" />
 	</section>
 
+	<h2>Textarea</h2>
 	<section>
-		<h2>Textarea</h2>
 		<Textarea
 			label="Description"
 			placeholder="Lorem ipsum..."
@@ -29,9 +29,10 @@
 		@apply text-2xl font-semibold text-gray-800 capitalize lg:text-3xl gdark:text-white mb-10;
 	}
 	section {
-		@apply my-8;
+		@apply mb-8 p-4 rounded-lg bg-gray-100 dark:bg-gray-900;
+
 	}
 	h2 {
-		@apply text-xl font-medium tracking-wide text-gray-700 mb-4;
+		@apply mb-4 text-xl font-medium tracking-wide text-gray-700;
 	}
 </style>
