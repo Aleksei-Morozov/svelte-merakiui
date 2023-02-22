@@ -48,6 +48,11 @@
 		<Input placeholder="John Doe" />
 	</section>
 
+	<h2>Disabled input</h2>
+	<section>
+		<Input disabled placeholder="John Doe" />
+	</section>
+
 	<h2>Input with label</h2>
 	<section>
 		<Label for="input1">Username</Label>
