@@ -2,6 +2,7 @@
 	import Label from '$lib/Label.svelte';
 	import Textarea from '$lib/Textarea.svelte';
 	import Helper from '$lib/Helper.svelte';
+	import Input from '$lib/Input.svelte';
 </script>
 
 <main>
@@ -24,21 +25,46 @@
 
 	<h2>Textarea with label</h2>
 	<section>
-		<Label for="myTextarea1">Description</Label>
-		<Textarea id="myTextarea1" placeholder="Lorem ipsum..." />
+		<Label for="textarea1">Description</Label>
+		<Textarea id="textarea1" placeholder="Lorem ipsum..." />
 	</section>
 
 	<h2>Textarea with label and helper text</h2>
 	<section>
-		<Label for="myTextarea2">Description</Label>
-		<Textarea id="myTextarea2" placeholder="Lorem ipsum..." />
+		<Label for="textarea2">Description</Label>
+		<Textarea id="textarea2" placeholder="Lorem ipsum..." />
 		<Helper>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
 	</section>
 
 	<h2>Textarea with label and error message</h2>
 	<section>
-		<Label for="myTextarea3">Description</Label>
-		<Textarea error id="myTextarea3" placeholder="Lorem ipsum..." />
+		<Label for="textarea3">Description</Label>
+		<Textarea error id="textarea3" placeholder="Lorem ipsum..." />
+		<Helper error>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
+	</section>
+
+	<h2>Input</h2>
+	<section>
+		<Input placeholder="John Doe" />
+	</section>
+
+	<h2>Input with label</h2>
+	<section>
+		<Label for="input1">Username</Label>
+		<Input id="input1" placeholder="John Doe" />
+	</section>
+
+	<h2>Input with label and helper text</h2>
+	<section>
+		<Label for="input2">Username</Label>
+		<Input id="input2" placeholder="John Doe" />
+		<Helper>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
+	</section>
+
+	<h2>Input with label and error message</h2>
+	<section>
+		<Label for="input3">Username</Label>
+		<Input error id="input3" placeholder="John Doe" />
 		<Helper error>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
 	</section>
 </main>
