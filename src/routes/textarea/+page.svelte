@@ -2,10 +2,13 @@
 	import Section from '../Section.svelte';
 	import Textarea from '$lib/Textarea.svelte';
 	import Label from '$lib/Label.svelte';
+	import H1 from '$lib/H1.svelte';
 	import Helper from '$lib/Helper.svelte';
 </script>
 
-<Section heading="Textarea">
+<H1>Textarea</H1>
+
+<Section heading="Single textarea">
 	<Textarea placeholder="Lorem ipsum..." />
 </Section>
 

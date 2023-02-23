@@ -1,8 +1,11 @@
 <script lang="ts">
 	import Section from '../Section.svelte';
 	import Label from '$lib/Label.svelte';
+	import H1 from '$lib/H1.svelte';
 </script>
 
-<Section heading="Label">
+<H1>Label</H1>
+
+<Section heading="Label for input controls">
 	<Label for="someId">Lorem ipsum</Label>
 </Section>

@@ -3,9 +3,12 @@
 	import Input from '$lib/Input.svelte';
 	import Label from '$lib/Label.svelte';
 	import Helper from '$lib/Helper.svelte';
+	import H1 from '$lib/H1.svelte';
 </script>
 
-<Section heading="Input">
+<H1>Input</H1>
+
+<Section heading="Single input">
 	<Input placeholder="John Doe" />
 </Section>
 
