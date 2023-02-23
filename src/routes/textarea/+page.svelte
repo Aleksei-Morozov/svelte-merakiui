@@ -30,6 +30,7 @@
 </Section>
 
 <Section
+	dir="rtl"
 	heading="Textarea with label and error message"
 	code={'<Label for="textarea3">Description</Label>\n<Textarea error id="textarea3" placeholder="Lorem ipsum..." />\n<Helper error>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>'}
 >

@@ -8,7 +8,7 @@
 <section>
 	<h2>{heading}</h2>
 	
-	<div>
+	<div {...$$restProps}>
 		<slot />
 	</div>
 	

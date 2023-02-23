@@ -6,6 +6,7 @@
 		{ name: 'H1', href: '/h1' },
 		{ name: 'Helper', href: '/helper' },
 		{ name: 'Input', href: '/input' },
+		{ name: 'Tabs', href: '/tabs' },
 		{ name: 'Textarea', href: '/textarea' }
 	];
 
