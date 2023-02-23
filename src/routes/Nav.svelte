@@ -27,7 +27,7 @@
 	</header>
 	<main>
 		{#each components as component}
-			<a href={component.href}>
+			<a href={component.href} class:active={$page.route.id == component.href}>
 				{component.name}
 			</a>
 		{/each}
@@ -49,5 +49,8 @@
 	}
 	main a {
 		@apply px-4 py-2 text-sm text-gray-800 transition-colors duration-300 bg-gray-100 rounded-lg hover:bg-gray-200;
+	}
+	.active {
+		@apply text-white bg-blue-500 hover:bg-blue-600;
 	}
 </style>
