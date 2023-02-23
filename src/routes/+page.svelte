@@ -13,6 +13,6 @@
 		@apply text-2xl font-semibold text-gray-800 capitalize lg:text-3xl gdark:text-white mb-6;
 	}
 	p {
-		@apply text-gray-500 dark:text-gray-400;
+		@apply text-gray-500 gdark:text-gray-400;
 	}
 </style>
