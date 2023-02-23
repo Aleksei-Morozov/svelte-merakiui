@@ -8,7 +8,7 @@
 <H1>Tabs</H1>
 
 <Section
-	heading="Label for input controls"
+	heading="Default"
 	code={`<Tabs labels=\{['Profile', 'Account', 'Notification']\}>\n\t<Tab>Profile content</Tab>\n\t<Tab>Account content</Tab>\n\t<Tab>Notification content</Tab>\n</Tabs>`}
 >
 	<Tabs labels={['Profile', 'Account', 'Notification']}>
