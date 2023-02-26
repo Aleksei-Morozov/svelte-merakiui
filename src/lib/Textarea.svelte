@@ -1,5 +1,8 @@
 <script lang="ts">
+	import Helper from './Helper.svelte';
+
 	export let value: string = '';
+	export let helper: string = '';
 	export let error: boolean = false;
 </script>
 
@@ -21,6 +24,10 @@
 	on:mouseover
 	on:paste
 />
+
+{#if helper}
+	<Helper {error}>{helper}</Helper>
+{/if}
 
 <style lang="postcss">
 	textarea {
