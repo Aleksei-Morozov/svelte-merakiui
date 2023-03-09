@@ -8,9 +8,9 @@
 
 <style lang="postcss">
 	p {
-		@apply mt-3 text-xs text-gray-400 gdark:text-gray-600;
+		@apply text-xs text-gray-400 gdark:text-gray-600;
 	}
-	.error {
+	p.error {
 		@apply text-red-400 gdark:text-red-400;
 	}
 </style>

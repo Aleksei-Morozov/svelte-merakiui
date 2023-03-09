@@ -6,6 +6,10 @@
 
 <H1>Label</H1>
 
-<Section heading="Label for input controls" code={'<Label for="someId">Lorem ipsum</Label>'}>
-	<Label for="someId">Lorem ipsum</Label>
+<Section heading="Label for input controls" code={'<Label>Lorem ipsum</Label>'}>
+	<div>
+		<Label class="my-label">
+			Lorem ipsum
+		</Label>
+	</div>
 </Section>

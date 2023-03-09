@@ -32,30 +32,30 @@
 	<Tab>
 		<Section
 			heading="Input with label"
-			code={'<Label for="input1">Username</Label>\n<Input id="input1" placeholder="John Doe" />'}
+			code={'<Label for="input1" class="mb-2">Username</Label>\n<Input id="input1" placeholder="John Doe" />'}
 		>
-			<Label for="input1">Username</Label>
+			<Label for="input1" class="mb-2">Username</Label>
 			<Input id="input1" placeholder="John Doe" />
 		</Section>
 	</Tab>
 	<Tab>
 		<Section
 			heading="Input with label and helper text"
-			code={'<Label for="input2">Username</Label>\n<Input id="input2" placeholder="John Doe" />\n<Helper>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>'}
+			code={'<Label for="input2" class="mb-2">Username</Label>\n<Input id="input2" placeholder="John Doe" />\n<Helper class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>'}
 		>
-			<Label for="input2">Username</Label>
+			<Label for="input2" class="mb-2">Username</Label>
 			<Input id="input2" placeholder="John Doe" />
-			<Helper>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
+			<Helper class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
 		</Section>
 	</Tab>
 	<Tab>
 		<Section
 			heading="Input with label and error message"
-			code={'<Label for="input3">Username</Label>\n<Input error id="input3" placeholder="John Doe" />\n<Helper error>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>'}
+			code={'<Label for="input3" class="mb-2">Username</Label>\n<Input error id="input3" placeholder="John Doe" />\n<Helper error class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>'}
 		>
-			<Label for="input3">Username</Label>
+			<Label for="input3" class="mb-2">Username</Label>
 			<Input error id="input3" placeholder="John Doe" />
-			<Helper error>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
+			<Helper error class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
 		</Section>
 	</Tab>
 </Tabs>

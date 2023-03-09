@@ -1,9 +1,13 @@
-<label {...$$props}>
+<script lang="ts">
+	const { ['class']: _, ...props } = $$restProps;
+</script>
+
+<label class={$$restProps.class} {...props}>
 	<slot />
 </label>
 
 <style lang="postcss">
 	label {
-		@apply block mb-2 text-sm text-gray-500 gdark:text-gray-300;
+		@apply block text-sm text-gray-500 gdark:text-gray-300;
 	}
 </style>
