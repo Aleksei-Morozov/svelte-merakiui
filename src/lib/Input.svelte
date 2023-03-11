@@ -1,13 +1,22 @@
 <script lang="ts">
 	import Helper from './Helper.svelte';
+	import Label from './Label.svelte';
 
 	export let value: string = '';
+	export let label: string = '';
 	export let helper: string = '';
 	export let error: boolean = false;
 	export let disabled: boolean = false;
+
+	export let id = label ? Math.random().toString(36).slice(2) : undefined;
 </script>
 
+{#if label}
+	<Label for={id}>{label}</Label>
+{/if}
+
 <input
+	{id}
 	class:error
 	bind:value
 	{disabled}

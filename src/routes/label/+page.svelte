@@ -8,7 +8,7 @@
 
 <Section heading="Label for input controls" code={'<Label>Lorem ipsum</Label>'}>
 	<div>
-		<Label class="my-label">
+		<Label>
 			Lorem ipsum
 		</Label>
 	</div>
