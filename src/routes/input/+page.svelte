@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Input from '$lib/Input/Atomic.svelte';
+	import Input from '$lib/Input.svelte';
 	import Label from '$lib/Label.svelte';
 	import Helper from '$lib/Helper.svelte';
 	import H1 from '$lib/H1.svelte';

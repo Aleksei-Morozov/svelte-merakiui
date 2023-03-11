@@ -1,7 +1,9 @@
-export { H1 } from './H1.svelte';
-export { Helper } from './Helper.svelte';
-export { Label } from './Label.svelte';
-export { Input } from './Input/Complex.svelte';
-export { Tab } from './Tab.svelte';
-export { Tabs } from './Tabs.svelte';
-export { Textarea } from './Textarea.svelte';
+import H1 from './H1.svelte';
+import Helper from './Helper.svelte';
+import Label from './Label.svelte';
+import Input from './Input.svelte';
+import Tab from './Tab.svelte';
+import Tabs from './Tabs.svelte';
+import Textarea from './Textarea.svelte';
+
+export { H1, Helper, Input, Label, Tab, Tabs, Textarea };
