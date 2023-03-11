@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Helper from './Helper.svelte';
 	import Label from './Label.svelte';
+	import Helper from './Helper.svelte';
 
 	export let value: string = '';
 	export let label: string = '';
