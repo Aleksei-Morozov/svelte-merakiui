@@ -24,6 +24,7 @@
 	"files": [
 		"dist"
 	],
+	"module": "./dist/index.js",
 	"peerDependencies": {
 		"svelte": "^3.54.0"
 	},
