@@ -4,6 +4,6 @@
 
 <style lang="postcss">
 	div {
-		@apply px-4 py-2;
+		@apply py-2;
 	}
 </style>

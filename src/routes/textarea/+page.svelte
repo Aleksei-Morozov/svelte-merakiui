@@ -4,36 +4,71 @@
 	import Label from '$lib/Label.svelte';
 	import H1 from '$lib/H1.svelte';
 	import Helper from '$lib/Helper.svelte';
+	import Tabs from '$lib/Tabs.svelte';
+	import Tab from '$lib/Tab.svelte';
+
+	const links = [
+		{ text: 'Default' },
+		{ text: 'Disabled' },
+		{ text: 'With label' },
+		{ text: 'With label & helper' },
+		{ text: 'With label & error' }
+	];
 </script>
 
 <H1>Textarea</H1>
 
-<Section heading="Single textarea" code={'<Textarea placeholder="Lorem ipsum..." />'}>
-	<Textarea placeholder="Lorem ipsum..." />
-</Section>
-
-<Section
-	heading="Textarea with label"
-	code={'<Label for="textarea1">Description</Label>\n<Textarea id="textarea1" placeholder="Lorem ipsum..." />'}
->
-	<Label for="textarea1" class="mb-2">Description</Label>
-	<Textarea id="textarea1" placeholder="Lorem ipsum..." />
-</Section>
-
-<Section
-	heading="Textarea with label and helper text"
-	code={'<Label for="textarea2" class="mb-2">Description</Label>\n<Textarea id="textarea2" placeholder="Lorem ipsum..." />\n<Helper class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>'}
->
-	<Label for="textarea2" class="mb-2">Description</Label>
-	<Textarea id="textarea2" placeholder="Lorem ipsum..." />
-	<Helper class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
-</Section>
-
-<Section
-	heading="Textarea with label and error message"
-	code={'<Label for="textarea3" class="mb-2">Description</Label>\n<Textarea error id="textarea3" placeholder="Lorem ipsum..." />\n<Helper error class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>'}
->
-	<Label for="textarea3" class="mb-2">Description</Label>
-	<Textarea error id="textarea3" placeholder="Lorem ipsum..." />
-	<Helper error class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Helper>
-</Section>
+<Tabs {links} class="mt-4">
+	<Tab>
+		<Section heading="Default textarea" code={`<Textarea placeholder="Lorem ipsum..." />`}>
+			<Textarea placeholder="Lorem ipsum..." />
+		</Section>
+	</Tab>
+	<Tab>
+		<Section heading="Disabled textarea" code={`<Textarea disabled placeholder="Lorem ipsum..." />`}>
+			<Textarea disabled placeholder="Lorem ipsum..." />
+		</Section>
+	</Tab>
+	<Tab>
+		<Section
+			heading="Textarea with label"
+			code={'<Textarea label="Description" placeholder="Lorem ipsum..." />'}
+		>
+			<Textarea label="Description" placeholder="Lorem ipsum..." />
+		</Section>
+	</Tab>
+	<Tab>
+		<Section
+			heading="Textarea with label and helper text"
+			code={`<Textarea
+	label="Description"
+	helper="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+	placeholder="Lorem ipsum..."
+/>`}
+		>
+			<Textarea
+				label="Description"
+				helper="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+				placeholder="Lorem ipsum..."
+			/>
+		</Section>
+	</Tab>
+	<Tab>
+		<Section
+			heading="Textarea with label and error message"
+			code={`<Textarea
+	label="Description"
+	error
+	helper="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+	placeholder="Lorem ipsum..."
+/>`}
+		>
+			<Textarea
+				label="Description"
+				error
+				helper="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+				placeholder="Lorem ipsum..."
+			/>
+		</Section>
+	</Tab>
+</Tabs>
