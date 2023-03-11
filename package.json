@@ -1,6 +1,6 @@
 {
 	"name": "svelte-merakiui",
-	"version": "0.0.27",
+	"version": "0.0.28",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
