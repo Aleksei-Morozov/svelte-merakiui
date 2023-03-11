@@ -1,8 +1,5 @@
 <script lang="ts">
-	import Input from '$lib/Input.svelte';
-	import Label from '$lib/Label.svelte';
-	import Helper from '$lib/Helper.svelte';
-	import H1 from '$lib/H1.svelte';
+	import { Input, Label, Helper, H1 } from '$lib/index.js';
 	import Section from '../Section.svelte';
 	import Tabs from '$lib/Tabs.svelte';
 	import Tab from '$lib/Tab.svelte';
